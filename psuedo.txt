@@ -1,0 +1,37 @@
+cv builder 
+-name
+-fullname
+-email
+-phonenumber
+-address
+-education
+    {
+        school
+        degree
+        calendar - start - end date
+        location
+    }
+-experience
+    {
+        company name
+        position title
+        start
+        end
+        location
+        descriptions
+    }
+
+
+customize layout 
+-color
+-fonts
+-top
+-left
+-right
+
+selected details can hide/show
+input is stored in object will use reducer
+
+components-
+input
+visual for details
