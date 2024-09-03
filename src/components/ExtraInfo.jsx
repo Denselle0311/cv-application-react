@@ -101,7 +101,7 @@ export default function ExtraInfo({
                 [itemArray]: [...prev[itemArray].filter((r) => r.id != e.id)],
               }));
             }}
-            className="border border-black p-1 rounded-md cursor-pointer hover:bg-black hover:text-white"
+            className="border max-w-sm break-words text-left border-black p-1 rounded-md cursor-pointer hover:bg-black hover:text-white"
             key={e.id}
           >
             {e[itemName]}

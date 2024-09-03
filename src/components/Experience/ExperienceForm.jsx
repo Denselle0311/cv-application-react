@@ -15,7 +15,7 @@ export default function ExperienceForm({
 
   return (
     <>
-      <h2 className="font-bold">Professional Experience</h2>
+      <h2 className="font-bold text-[1.5em]">Professional Experience</h2>
       <form className="flex flex-col border p-6 gap-2">
         <InputGroup
           label="Title/Position"

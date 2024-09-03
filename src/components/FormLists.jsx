@@ -8,7 +8,7 @@ export default function FormLists({
   setFormLists,
 }) {
   return (
-    <ul className="min-w-full flex flex-col gap-2">
+    <ul className="min-w-full mt-2 flex flex-col gap-2">
       {formList.map((e) => {
         return (
           <li

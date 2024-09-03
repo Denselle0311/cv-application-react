@@ -1,8 +1,7 @@
-/* eslint-disable react/prop-types */
 import ExtraInfo from "../ExtraInfo";
 import InputGroup from "../InputGroup";
 
-export default function EducationForm({
+export default function form({
   formObj,
   isEditing,
   setEducation,
@@ -25,7 +24,7 @@ export default function EducationForm({
 
   return (
     <>
-      <h2 className="font-bold">Education</h2>
+      <h2 className="font-bold text-[1.5em]">Education</h2>
       <form className="flex flex-col border p-6 gap-2">
         <InputGroup
           label="University/School"
@@ -102,7 +101,7 @@ export default function EducationForm({
                   if (e.id == selectedId) {
                     return {
                       id: selectedId,
-                      form,
+                      form: form,
                     };
                   }
                   return e;
@@ -125,11 +124,10 @@ export default function EducationForm({
               ...prev,
               {
                 id: generateId(prev.length),
-                form,
+                form: form,
               },
             ]);
             clearInputs();
-            console.log(form);
             setAdditionalInfo("");
           }}
         >

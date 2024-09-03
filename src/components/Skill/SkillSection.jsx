@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import InputGroup from "../InputGroup";
 
-export default function SkillSection() {
-  const [allSKills, setAllSkills] = useState([]);
-  const [skill, setSkill] = useState("");
+export default function SkillSection({ allSKill }) {
+  const { allSKills, setAllSkills } = allSKill;
+  const [skill, setSkill] = useState("Javascript");
   const [isEditing, setIsEditing] = useState(false);
   const [selectedId, setSelectedId] = useState(null);
 
